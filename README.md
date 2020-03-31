@@ -1,2 +1,0 @@
-# bobpepper
-assistente de cultivo
