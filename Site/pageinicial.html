@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Site institucional</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style>
+		h4 {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="menu">
+		<img for="rd_img" src="img/logo.png">
+		<label for="rd_home">Home</label>
+		<label for="rd_nos">Quem somos</label>
+		<label for="rd_servicos">Financeiro</label>
+		<label for="rd_contato">Contato</label>
+		<input type="submit" value="Entrar" onclick="window.location='./telalogin.html';" />
+	</nav>
+
+	<div class="scroll">
+		<input type="radio" name="grupo" id="rd_img">
+		<input type="radio" name="grupo" id="rd_home" checked="true">
+		<input type="radio" name="grupo" id="rd_nos">
+		<input type="radio" name="grupo" id="rd_servicos">
+		<input type="radio" name="grupo" id="rd_contato">
+
+		<section class="sections" style="background-image: url('./img/pimentaini.jpg');">
+			<section class="bloco" id="home">
+				<div id="div_imgs">
+					<img src="img/7e638b7c-c8a6-4022-bff6-a9f41a48982d.jpg" alt="Logo"
+						style="float: left; border: 2px solid black;">
+					
+					<img src="img/pepper.png" alt="Projeto"
+						style="border: 2px solid black;">
+
+				</div>
+			</section>
+			<section class="bloco" id="nos" style="background-image: url('./img/pimentel.jpg');">
+
+				<div id="div_quem_somos" style="width: 400px; height: 400px; border: 2px solid black;
+				align-items: center; margin-top: 5%; background-color: #CCC; border-radius: 20px;">
+
+					<div style="margin-left: 10px; margin-right: 10px;">
+						<H1 style="text-align: center ; padding: 10px 0; margin-bottom: 2px solid black">Quem somos</H1>
+						<hr
+							style="background-color: black; margin-bottom: 10px; margin-left: 10px; margin-right: 10px;">
+
+						<h4>
+							Bob Pepper é uma plataforma web criada em 2020 pelo grupo JG solutions, formado por
+							estudantes
+							do ensino superior
+							de análise e desenvolvimento de sistemas da faculdade BandTec.</h4>
+						<br>
+						<h4>Bob Pepper é um assistente de cultivo que utiliza tecnologia da informação para auxiliar
+							pequenos produtores e
+							agricultores familiares no plantiu e cultivo de pimentas.</h4>
+						<br>
+						<h4>Utiliza um banco de dados que faz
+							registros feitos
+							pelos sensores instalados na plantação.</h4>
+						<br>
+						<h4>Conta também com análises de mercado, informações
+							técnicas e dicas de
+							boas práticas de cultivo.</h4>
+					</div>
+				</div>
+
+
+				<div id="div_visao_valores" style="width: 400px; height: 400px; border: 2px solid black;
+				align-items: center; margin-top: 5%; float: left; margin-left: 10px; background-color: #ccc; border-radius: 20px;">
+
+					<div style="margin-left: 10px; margin-right: 10px;">
+						<h1 style="text-align: center ; padding: 10px 0">Missão</h1>
+						<h4>Informatizar dados e registros vitais da plantação para que o produtor tome decisões mais
+							acertivas e tenha um
+							controle mais amplo de seu cultivo.
+						</h4>
+
+						<br>
+						<hr
+							style="background-color: black; margin-bottom: 10px; margin-left: 10px; margin-right: 10px;">
+						<h1 style="text-align: center; padding: 10px 0">Visão</h1>
+
+						<h4>
+							Levar tecnólogia para as práticas de cultivo de pequenos produtores e agricultores
+							familiares
+							brasileiros.
+						</h4>
+						<br>
+						<hr
+							style="background-color: black; margin-bottom: 10px; margin-left: 10px; margin-right: 10px;">
+						<h1 style="text-align: center; padding: 10px 0">Valores</h1>
+
+						<h4>
+							Colaborar para o desenvolvimento tecnologico do segmento.
+							Colaborar para o desenvolvimento socio economico de pequenos produtores e agricultores
+							familiares.
+							Apoiar práticas sustentáveis.
+						</h4>
+					</div>
+				</div>
+			</section>
+
+			<section class="bloco" id="servicos" style="background-image: url('./img/page2.jpg');">
+				<div id="financeiradiv"
+					style="font-size: 16px; background: #CCC; width: 500px; height: 335px; margin: 0 auto; padding: 0 10px 10px 10px; border-radius: 20px;">
+					<h1 style="text-align: center ; padding: 10px 0;margin-bottom: 2px solid black"></h1>
+					<h3 align="center">digite a área em metro quadrados</h3><br><br>
+					<input type="number" id="valormq" style="display: block;"><br><br>
+
+					
+					<div align="center">
+						<h3>Planos</h3><br><br>
+						<button onclick="mensal()" style="width: 100px;height: 50px;">mensal</button>
+						<button onclick="semestral()" style="width: 100px;height: 50px;">semestral</button>
+						<button onclick="anual()" style="width: 100px;height: 50px;">anual</button>
+					</div><br>
+
+					<div id="mostrareais" align = "center"></div>
+				</div>
+			</section>
+
+			<section class="bloco" id="contato" style="background-image: url('./img/pimpimenta.jpg');">
+				<div
+					style="font-size: 16px; background: #CCC; border-radius: 20px;width: 500px; height: 335px; margin: 0 auto; padding: 0 10px 10px 10px; margin-right: -10%;">
+					<h1 style="text-align: center ; padding: 10px 0; margin-bottom: 2px solid black;"><b> ATENDIMENTO
+						</b></h1>
+					<br>
+					<h4>Horário de atendimento: 13:00 às 19:00 de segunda à sexta-feira, horário de Brasília (exceto
+						feriados).</h4>
+					<br>
+					<h4>Endereço: Rua Haddok lobo, 2 - 4º Andar</h4>
+					<br>
+					<h4>Centro - Consolação (SP) - CEP: 12345-678</h4>
+					<br>
+					<h4>Central SAC: (11) 4002-8922</h4>
+					<br>
+					<h4>E-mail: bobpepper@hotmail.com.br Recepção de Fax: (11) 4002-8922</h4>
+				</div>
+				<form name="formteste" action="" method="post"
+					style="font-size: 16px;border-radius: 20px ; background: #CCC; max-width: 500px; margin: 0 auto; padding: 0 10px 10px 10px;">
+
+					<h1 style="color: #333; text-align: center; padding: 5px;">Contato</h1>
+
+					<p class="nome">
+						<input type="text" name="nome" placeholder="informe seu nome" style="display: block;">
+					</p>
+
+					<p class="email">
+						<input type="email" name="email" placeholder="informe seu email" style="display: block;">
+					</p>
+
+					<p class="assunto">
+						<input type="text" name="assunto" placeholder="informe o assunto" style="display: block;">
+					</p>
+
+					<p class="mensagem">
+						<textarea name="mensagem" placeholder="deixe sua mensagem"></textarea>
+					</p>
+
+					<p class="enviar">
+						<input type="submit" name="enviar" value="Enviar" style="display: block; ">
+					</p>
+				</form>
+			</section>
+		</section>
+	</div>
+</body>
+
+</html>
+<script>
+	function mensal() {
+		var qtdsensores = valormq.value * 5;
+		mostrareais.innerHTML = `seu valor mensal é de R$${qtdsensores}`;
+
+	}
+	function semestral() {
+		var desconto = ((valormq.value * 5) * 6)*0.25;
+		var qtdsensores = ((valormq.value * 5) * 6)* 0.75;
+		mostrareais.innerHTML = `O valor a ser pago é de R$${qtdsensores.toFixed(2)} nesse plano você tem 25% de desconto que equivale a R$${desconto.toFixed(2)}`;
+	}
+	function anual() {
+		var qtdsensores = ((valormq.value * 5) * 12)* 0.50;
+		mostrareais.innerHTML = `O valor a ser pago é de R$${qtdsensores.toFixed(2)} nesse plano você tem 50% de desconto que equivale a R$${qtdsensores.toFixed(2)}`;
+	}
+</script>
