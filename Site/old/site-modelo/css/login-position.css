@@ -1,0 +1,91 @@
+.login {
+    background-color: #0009;
+    width:25%;
+    height: 70%;
+    border: 2px solid #000;
+    border-radius: 80px 0 80px 0px;
+    color:white;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 5% 2%;
+}
+
+
+.login img{
+
+    margin-left: 35%;
+    
+}
+
+.login h1 {
+
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 90%;
+    
+}
+
+.login p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.login input {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 10%;
+    height: 10%;
+    margin-bottom: 5%;
+}
+
+.login input[type="text"],input[type="password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background:transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    color:black;
+    background:white;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.login input[type="submit"] :hover {
+    cursor: pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+}
+
+.login a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 80%;
+    line-height: 20px;
+    color: #44f000;
+    transition: 0.2s;
+    position: static;
+}
+
+.login a:hover {
+    transition: 0.2;
+    color: red;
+}
+
+.login input:hover{
+    transition: 0.2;
+    color: red;
+}
